@@ -1,0 +1,14 @@
+version: '3'
+services:
+  convert-js-to-ts:
+    build: .
+    volumes:
+      - .:/code
+    command: bash -c "
+      npm install --save-dev @types/jasmine
+      &&
+      tsc todo.ts --outDir dist && node dist/todo.js
+      &&
+      npx jasmine --config=jasmine.json
+      &&
+      tail -f /dev/null"

@@ -1,0 +1,19 @@
+{
+    "name": "todo-app",
+    "version": "1.0.0",
+    "description": "A simple todo app with JS to TS conversion",
+    "main": "todo.js",
+    "scripts": {
+        "start": "node dist/todo.js",
+        "convert": "tsc todo.js --outDir dist",
+        "test": "jasmine"
+    },
+    "dependencies": {
+        "typescript": "^5.6.2"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^3.10.18",
+        "jasmine": "^3.10.0",
+        "ts-node": "^10.9.0"
+    }
+}

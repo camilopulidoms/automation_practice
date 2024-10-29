@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": true,  // Permitir archivos JavaScript
+    "checkJs": false, // No realizar chequeo de tipos en archivos JS
+    "esModuleInterop": true,  // Para facilitar la importación/exportación
+    "target": "es5",  // Compatibilidad con ES5
+    "module": "commonjs",  // Uso del sistema de módulos de Node.js
+    "types": ["jasmine", "node"], // Asegúrate de incluir los tipos de Jasmine y Node
+    "strict": true  // Para mayor seguridad con tipos
+  },
+  "include": [
+    "todo.js",  // Tu archivo JS
+    "spec/**/*.ts"  // Tus archivos de prueba en TypeScript
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
